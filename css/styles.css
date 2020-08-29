@@ -1,0 +1,655 @@
+.topNav {
+  background-color: #128FE1;
+  padding: 1em;
+  text-align: right;
+}
+
+.topNav a {
+  color: white;
+  margin: 0.5em;
+}
+
+.topNav a:hover {
+  text-decoration: none;
+}
+
+.topNav i {
+  position: relative;
+  top: 6px;
+}
+
+.spacer {
+  padding: 0;
+  margin-top: 0;
+  width: 1px;
+  height: 1.5em;
+  display: inline-block;
+  position: relative;
+  top: 5px;
+}
+
+.spacer-blue {
+  background-color: #1075B7;
+}
+
+.bigNav {
+  background-color: #12588F;
+  background: repeating-linear-gradient(
+    135deg, #12588F, #12588F 2px, #045183 2px, #045183 4px);
+  padding-top: 1em;
+}
+
+.icons {
+  margin-bottom: -3px;
+}
+
+.icons .material-icons {
+  background: -webkit-linear-gradient(#06CA62, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 60px;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+}
+
+.icons .material-icons:hover, .icons .material-icons:active {
+  background: -webkit-linear-gradient(#128FE1, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: default;
+}
+
+.navBtn {
+  background-color: #063A5D;
+}
+
+.navPlatform {
+  background-color: #12588F;
+  background-image: linear-gradient(to right, #045183, #0764A2, #045183);
+  padding-bottom: 1em;
+}
+
+.navShadow {
+  margin: 0;
+  padding: 0;
+}
+
+.navShadow li {
+  display: inline-block;
+  padding-left: 1.65em;
+  padding-right: 1.65em;
+}
+
+.topShadow {
+  width: 40px;
+  height: 2px;
+  border-radius: 50%;
+  background-color: #063A5D;
+  box-shadow: 0 0 7px 1px;
+}
+
+.bottomShadow {
+  width: 100px;
+  height: 10px;
+  background-color: white;
+  position: relative;
+  top: 22px;
+  right: 28px;
+  clip-path: polygon(
+      50% 0,
+      70% 100%,
+      30% 100%
+    );
+}
+
+.dashboard {
+  background-color: #06CA62;
+  color: white;
+  border-radius: 5px;
+  padding: 1em;
+  margin-top: 1em;
+}
+
+/* searchbar in dashboard */
+.search {
+  position: relative;
+  top: 0.5em;
+}
+
+.searchBar {
+  border-right: 0;
+}
+
+.searchIcon {
+  background-color: white;
+  color: #128FE1;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border: 1px solid #ccc;
+  border-left: 0;
+  height: 38px;
+  font-size: 28pt;
+}
+
+/* faded background div */
+.bg {
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 10px;
+  background-image: linear-gradient(#f1f1f1, white, white, white, white);
+}
+
+/* for border on main content div */
+.mainContent {
+  background-color: white;
+}
+
+.top {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+.topCol {
+  padding: 1em;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-bottom: 0;
+}
+
+.announcements {
+  color: orange;
+  border-right: 0;
+  border-left: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.buttons {
+  border-left: 0;
+  border-right: 0;
+}
+
+.buttons a {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  border: 1px solid #bbb;
+  position: relative;
+  box-shadow: 0 0 3px 1px #aaa;
+  font-size: 16px;
+  color: orange;
+  cursor: default;
+}
+
+.btnL {
+  right: 4px;
+}
+
+.btnR {
+  left: 4px;
+}
+
+.left {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+.right {
+  border-right: 1px solid #ddd;
+}
+
+.header {
+  font-size: 32px;
+  padding: 0.5em;
+  color: #128FE1;
+  border-top: 1px solid #ddd;
+}
+
+.tasksGear {
+  position: relative;
+  top: 14px;
+  color: #777;
+}
+
+.tasks {
+  font-size: 20px;
+  counter-reset: licounter;
+}
+
+.floatRight {
+  float: right;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 16px;
+  padding-right: 5px;
+}
+
+.floatRight div {
+  position: relative;
+  top: 4px;
+  font-size: 22pt;
+}
+
+.floatRight span {
+  position: relative;
+  bottom: 4px;
+}
+
+.tasks div {
+  display: inline-block;
+}
+
+.tasks a:link, .tasks a:visited {
+  color: #128FE1;
+}
+
+.tasks a:hover, .tasks a:active {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.tasks a:before {
+  content: counter(licounter);
+	counter-increment: licounter;
+  display: inline-block;
+  color: white;
+  background-color: #06CA62;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  padding: 1px;
+  margin-right: 0.5em;
+  text-align: center;
+  font-size: 18px;
+}
+
+.tasks a:link::before, .tasks a:visited::before {
+  background-color: #06CA62;
+}
+
+.tasks a:hover::before, .tasks a:active::before {
+  background-color: #ccc;
+}
+
+a.leftSlide {
+  position: relative;
+}
+
+a.leftSlide:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #06CA62;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+a.leftSlide:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
+.rec {
+  border-bottom: 1px dotted #ddd;
+}
+
+.rec div {
+  display: inline-block;
+  color: #777;
+  font-size: 12px;
+}
+
+.rec a:hover {
+  text-decoration: none;
+}
+
+.rec span {
+  font-size: 10px;
+  color: #999;
+}
+
+.rec i {
+  color: #06CA62;
+  font-size: 24pt;
+  position: relative;
+  top: 3px;
+}
+
+.barGraph {
+  margin: 1em;
+}
+
+.grey {
+  color: #999;
+  margin-left: 1em;
+}
+
+.graphDrop0 {
+  border: 1px solid #bbb;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.graphDrop1 {
+  color: orange;
+  border: 1px solid #bbb;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.graphDrop1:hover {
+  color: orange;
+}
+
+.checks {
+  justify-content: center;
+}
+
+/* Customize the label (social) */
+.social {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  padding-right: 1em;
+  margin-bottom: 2.5em;
+  margin-top: 1em;
+  margin-right: 1em;
+  cursor: pointer;
+  font-size: 14px;
+  color: white;
+  border-radius: 5px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.social-facebook {
+  background-color: #045183;
+}
+
+.social-twitter {
+  background-color: #128FE1;
+}
+
+.social-foursquare {
+  background-color: #12588F;
+}
+
+.social-google {
+  background-color: #06CA62;
+}
+
+/* Hide default checkbox */
+.social input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 100px;
+  height: 21px;
+  width: 21px;
+  background-color: #ddd;
+  border: 3px solid white;
+  box-shadow: 0 0 1px 1px #ddd;
+  border-radius: 3px;
+}
+
+/* On hover, add darker background color */
+.social:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When checkbox is checked, add white background */
+.social input:checked ~ .checkmark {
+  background-color: white;
+}
+
+/* Create checkmark (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show checkmark when checked */
+.social input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style checkmark */
+.social .checkmark:after {
+  left: 5px;
+  bottom: 1px;
+  width: 15px;
+  height: 30px;
+  border: solid orange;
+  border-width: 0 4px 4px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.cc {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  justify-content: center;
+}
+
+.cards {
+  color: white;
+  padding-bottom: 30px;
+  padding-top: 40px;
+  text-align: center;
+  transition: 0.25s;
+}
+
+.cards:hover {
+  transform: translateY(-5px);
+}
+
+.topthird {
+  border-top: 1px solid #ddd;
+  border-left: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  height: 49px;
+}
+
+.topthird i {
+  font-size: 100px;
+  position: relative;
+  bottom: 35px;
+  padding-bottom: -21px;
+}
+
+.green {
+  color: #06CA62;
+}
+
+.orange {
+  color: orange;
+}
+
+.middleT {
+  display: inline-block;
+}
+
+.middlethird {
+  background-color: #128FE1;
+  padding: 0.5em;
+  font-size: 20px;
+}
+
+.middlethird span {
+  font-size: 11px;
+}
+
+.wing {
+  width: 18px;
+  height: 48px;
+  position: relative;
+  top: 57px;
+}
+
+.bottomthird {
+  border-bottom: 2px solid #aaa;
+  border-left: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 15px;
+}
+
+.bottomthird img {
+  width: 197px;
+  height: 86px;
+}
+
+.blueSlider {
+  padding: 25px;
+  text-align: center;
+}
+
+.banner {
+  background-color: #128FE1;
+  border-radius: 3px;
+}
+
+.bannerText {
+  background-color:inherit;
+  color: white;
+  text-align: left;
+  width: 70%;
+  display: inline-block;
+  padding: 2em;
+}
+
+.slider-btn {
+  width: 33px;
+  height: 75px;
+  position: relative;
+  top: 60px;
+}
+
+.back {
+  float: left;
+}
+
+.next {
+  float: right;
+}
+
+.bottom {
+  background-color: #128FE1;
+  color: white;
+  text-align: center;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  justify-content: center;
+  z-index: -10;
+}
+
+.ad {
+  width: 284px;
+  height: 160px;
+  background-color: white;
+  margin: 1.5em;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.25s;
+}
+
+.ad1 {
+  float: left;
+}
+
+.ad2 {
+  position: relative;
+  bottom: 11px;
+}
+
+.ad3 {
+  float: right;
+}
+
+.ad:hover {
+  transform: scale(1.05, 1.05);
+}
+
+footer {
+  background-color: #f1f1f1;
+  color: #ddd;
+  text-align: center;
+  border-top: 3px #fff outset;
+  box-shadow: 0 0 10px 1px #aaa;
+  margin-top: 20px;
+}
+
+.footerDiv {
+  font-size: 0.8em;
+  text-decoration: none;
+  color: #777;
+  display: inline-block;
+  padding: 1.5em;
+  margin: 0;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #777;
+}
+
+footer img {
+  margin-bottom: -10px;
+  margin-top: -15px;
+}
+
+footer i {
+  margin-bottom: -15px;
+}
+
+.footerHover {
+  filter: grayscale(100%);
+}
+
+.footerHover:hover {
+  filter: grayscale(0%);
+}
+
+.spacer-grey {
+  background-color: #c5c5c5;
+}
+
+.iconF {
+  float: right;
+  position: relative;
+  bottom: 7px;
+  font-size: 30px;
+}
+
+.blue {
+  color: #128FE1;
+}
+
+.borderF {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.socialF {
+  width: 94px;
+  height: 23px;
+}
