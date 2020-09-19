@@ -1,0 +1,21 @@
+.jcarousel {
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-bottom: 0;
+    width: 800px;
+}
+
+.jcarousel ul {
+    width: 10000em;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.jcarousel li {
+    width: 800px;
+    float: left;
+    padding: 1em;
+    text-align: center;
+}
